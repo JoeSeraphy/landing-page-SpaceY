@@ -46,7 +46,7 @@ npm run dev
 
 Você pode visualiza os projetos pelos links abaixo:
 
-- [Live Preview](https://myonix.vercel.app/)
+- [Live Preview]()
 
 - [Figma](<https://www.figma.com/file/W109B1CGYN1ILSeujVy4Pe/SpaceY---Figmentor-(Community)?node-id=45%3A649>)
 
