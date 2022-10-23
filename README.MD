@@ -5,7 +5,7 @@
 ## Desktop
 
 <h1 align="center">
-<img alt="Preview Desktop" title="SpaceY" src=".github/interface_Desktop.png" />
+<img alt="Preview Desktop" title="SpaceY" src=".github/Interface_Desktop.png" />
 </h1>
 
 ## Mobile
