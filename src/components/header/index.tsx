@@ -1,6 +1,6 @@
 import React from "react";
 import { GlobalStyles } from "../../styles/globalStyles";
-import { HeaderStyle } from "./styles";
+import { Background, HeaderStyle, Logo } from "./styles";
 
 export const Header = () => {
   const logo = <img src="./Logo.svg" />;
@@ -8,7 +8,11 @@ export const Header = () => {
   return (
     <div>
       <GlobalStyles />
-      <HeaderStyle>{logo}</HeaderStyle>
+      <Background>
+        <HeaderStyle>
+          <Logo>{logo}</Logo>
+        </HeaderStyle>
+      </Background>
     </div>
   );
 };

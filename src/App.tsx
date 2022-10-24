@@ -1,7 +1,8 @@
 import React from "react";
 import { GlobalStyles } from "./styles/globalStyles";
 import { Header } from "./components/header/index";
-import { Home } from "./components/hero";
+import { Home } from "./components/home";
+import { Section } from "./components/section2";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <GlobalStyles />
       <Header />
       <Home />
+      <Section />
     </div>
   );
 }
