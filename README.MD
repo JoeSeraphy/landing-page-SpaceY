@@ -50,7 +50,7 @@ Você pode visualiza os projetos pelos links abaixo:
 
 - [Figma](<https://www.figma.com/file/W109B1CGYN1ILSeujVy4Pe/SpaceY---Figmentor-(Community)?node-id=45%3A649>)
 
-Lembre-se vocé precisa ter uma conta no [Figma](http://figma.com/) para ter acesso
+Lembre-se você precisa ter uma conta no [Figma](http://figma.com/) para ter acesso
 
 ## 📝 License
 
