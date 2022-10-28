@@ -13,7 +13,7 @@ import {
 } from "./styles";
 
 export const Home = () => {
-  const illustration = <img src="./illustra/illustra_Banner.svg" />;
+  const illustration = <img src="./illustra/astronauta.png" />;
 
   return (
     <div>
