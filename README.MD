@@ -22,6 +22,7 @@ Este Projeto foi desenvolvido usando seguintes tecnolias:
 
 - [ReactJS](https://reactjs.org)
 - [ViteJS](https://vitejs.dev)
+- [Framer-motion](https://www.framer.com/motion/)
 - [Styled Components](https://styled-components.com)
 
 ## 🚀 Getting started

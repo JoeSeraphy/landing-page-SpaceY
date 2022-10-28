@@ -1,17 +1,27 @@
 import styled from "styled-components";
+import { ButtonProps } from ".";
 
-export const ButtonStyle = styled.div`
-  background-color: var(--mars);
-  width: 264px;
+export const ButtonStyle = styled.div<ButtonProps>`
+  background-color: ${(props) => props.bgColor};
+  width: ${(props) => props.width};
   heigth: 52px;
   cursor: pointer;
-  color: #fff;
+  color: ${(props) => props.color};
   margin-top: 32px;
-  padding: 16px;
+  padding: ${(props) => props.padding};
   border-radius: 6px;
 
-  text-align: center;
+  text-align: ${(props) => props.textAlign};
   font-size: 1.8rem;
   font-weight: 700;
   line-height: 26.44px;
+
+  transition: 0.3s linear;
+  &:hover {
+    filter: saturate(1.5);
+  }
+
+  @media (max-width: 425px) {
+    width: 100%;
+  }
 `;

@@ -3,6 +3,7 @@ import React from "react";
 
 export const Background = styled.div`
   background: linear-gradient(180deg, #040327 0%, #0d0e13 24.49%);
+  width: 100%;
 `;
 
 export const BgImg = styled.div`
@@ -19,11 +20,24 @@ export const MarsFlex = styled.div`
   display: flex;
   justify-content: center;
   aling-items: center;
+
+  @media (max-width: 425px) {
+    max-width: 375px;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
 `;
 
 export const Mars = styled.div`
   margin-top: 46px;
   margin-left: 41px;
+
+  @media (max-width: 425px) {
+    scale: 70%;
+    margin: 0 auto;
+  }
 `;
 
 export const Text = styled.div`
@@ -31,6 +45,15 @@ export const Text = styled.div`
   margin-left: 42px;
   width: 603px;
   height: 378px;
+
+  @media (max-width: 425px) {
+    margin: 0 auto;
+    width: 341px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
 `;
 
 export const TextH4 = styled.h4`
@@ -47,6 +70,7 @@ export const TextH2 = styled.h2`
   font-size: 3.2rem;
   font-weight: 700;
   line-height: 48px;
+  letter: 1px;
   color: #fff;
   margin-bottom: 26px;
 `;
@@ -59,4 +83,41 @@ export const TextP = styled.p`
   letter: 1px;
   color: var(--gray-05);
   margin-bottom: 24px;
+`;
+
+export const DivFlex = styled.div`
+  max-width: 1440px;
+  margin-top: 121px;
+  margin-left: 112px;
+  padding-bottom: 100px;
+  display: flex;
+  align-items: center;
+
+  @media (max-width: 425px) {
+    width: 341px;
+    margin: 0 auto;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-top: 250px;
+  }
+`;
+
+export const Text2 = styled.div`
+  width: 30%;
+
+  @media (max-width: 425px) {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+`;
+
+export const Logo = styled.div`
+  width: 162px;
+
+  @media (max-width: 425px) {
+    width: 100%;
+  }
 `;

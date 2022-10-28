@@ -27,7 +27,14 @@ export const Home = () => {
               A primeira viagem para Marte estará disponivél apartir do dia
               12/03/2028. Increva-se em nossa lista de espera.
             </TextP>
-            <Button text="Inscreva-se Agora" />
+            <Button
+              text="Inscreva-se Agora"
+              color="#fff"
+              bgColor="var(--mars)"
+              padding="16px"
+              textAlign="center"
+              width="264px"
+            />
           </TextsBanner>
           <Img>{illustration}</Img>
         </HomeStyle>

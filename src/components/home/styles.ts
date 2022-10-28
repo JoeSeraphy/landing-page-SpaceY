@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { device } from "../../styles/responsive";
 
 export const Background = styled.div`
   background: var(--space-dark);
@@ -10,14 +11,29 @@ export const HomeStyle = styled.div`
   margin: 0 auto;
   display: flex;
   justify-content: center;
+
+  @media (max-width: 425px) {
+    max-width: 375px;
+    margin-top: -50px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 export const TextsBanner = styled.div`
   width: 815px;
   height: 359px;
   margin-top: 95px;
-  margin-right: 40px;
   margin-left: 112px;
+
+  @media (max-width: 425px) {
+    width: 341px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
 `;
 
 export const TextH4 = styled.h4`
@@ -28,6 +44,13 @@ export const TextH4 = styled.h4`
   text-transform: uppercase;
   color: var(--sun);
   margin-bottom: 8px;
+
+  @media (max-width: 425px) {
+    font-size: 1.4rem;
+    line-height: 20.56px;
+    text-align: center;
+    width: 100%;
+  }
 `;
 
 export const Title = styled.h1`
@@ -36,9 +59,13 @@ export const Title = styled.h1`
   line-height: 82px;
   color: #fff;
   margin-bottom: 24px;
-`;
-export const Ponto = styled.div`
-  color: var(--sun);
+
+  @media (max-width: 425px) {
+    font-size: 3.6rem;
+    line-height: 52.88px;
+    width: 100%;
+    text-align: center;
+  }
 `;
 
 export const TextP = styled.p`
@@ -47,11 +74,23 @@ export const TextP = styled.p`
   font-weight: 400;
   line-height: 24px;
   color: var(--gray-05);
+
+  @media (max-width: 425px) {
+    text-align: center;
+    line-height: 24px;
+    width: 100%;
+  }
 `;
 
 export const Img = styled.div`
   position: relative;
-  top: -64px;
+  top: -50px;
+
+  @media (max-width: 425px) {
+    top: 0;
+
+    scale: 70%;
+  }
 `;
 
 export const FlexIcons = styled.div`
@@ -59,4 +98,10 @@ export const FlexIcons = styled.div`
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 425px) {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+  }
 `;

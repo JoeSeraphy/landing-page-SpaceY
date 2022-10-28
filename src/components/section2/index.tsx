@@ -1,4 +1,6 @@
 import { GlobalStyles } from "../../styles/globalStyles";
+import { Button } from "../button";
+import { Gallery } from "../gallery";
 import {
   Background,
   BgImg,
@@ -8,13 +10,17 @@ import {
   TextH2,
   TextH4,
   TextP,
+  DivFlex,
+  Text2,
+  Logo,
 } from "./styles";
 
 export const Section = () => {
   const mars = <img src="./illustra/Mars.svg" />;
+  const logo = <img src="./Logo.svg" />;
 
   return (
-    <div>
+    <>
       <GlobalStyles />
       <Background>
         <BgImg>
@@ -31,17 +37,25 @@ export const Section = () => {
                 atmosfera é composta principalmente de CO2 com um pouco de
                 nitrogênio e argônio e alguns outros oligoelementos, o que
                 significa que podemos cultivar plantas em Marte apenas
-                comprimindo a atmosfera.
-              </TextP>
-              <TextP>
-                A gravidade em Marte é cerca de 38% da da Terra, então você
-                seria capaz de levantar coisas pesadas e dar voltas. Além disso,
-                o dia está notavelmente próximo ao da Terra.
+                comprimindo a atmosfera. <br /> <br />A gravidade em Marte é
+                cerca de 38% da da Terra, então você seria capaz de levantar
+                coisas pesadas e dar voltas. Além disso, o dia está notavelmente
+                próximo ao da Terra.
               </TextP>
             </Text>
           </MarsFlex>
+          <DivFlex>
+            <Text2>
+              <Logo>{logo}</Logo>
+              <TextH2>
+                O caminho para tornar a humanidade multiplanetária.
+              </TextH2>
+              <Button text="increva-se agora" color={"var(--mars-ligth)"} />
+            </Text2>
+            <Gallery />
+          </DivFlex>
         </BgImg>
       </Background>
-    </div>
+    </>
   );
 };

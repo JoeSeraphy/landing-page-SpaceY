@@ -32,8 +32,13 @@ html {
  }
 
 body {
-    display: grid;
 
     font-family: 'Heebo', sans-serif; 
+    margin: 0 auto;
+  
+}
+
+ul {
+    list-style: none;
 }
 `;

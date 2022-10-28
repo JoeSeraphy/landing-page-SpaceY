@@ -6,13 +6,13 @@ export const Header = () => {
   const logo = <img src="./Logo.svg" />;
 
   return (
-    <div>
+    <>
       <GlobalStyles />
       <Background>
         <HeaderStyle>
           <Logo>{logo}</Logo>
         </HeaderStyle>
       </Background>
-    </div>
+    </>
   );
 };
