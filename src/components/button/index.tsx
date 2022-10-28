@@ -1,4 +1,3 @@
-import React from "react";
 import { GlobalStyles } from "../../styles/globalStyles";
 import { ButtonStyle } from "./style";
 
