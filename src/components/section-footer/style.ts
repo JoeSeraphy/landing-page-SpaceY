@@ -4,17 +4,18 @@ export const Background = styled.div`
   background-color: var(--gray-01);
 `;
 
-export const Smoke = styled.div`
+export const Smoke = styled.img`
   max-width: 1440px;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
 
   @media (max-width: 425px) {
-    max-width: 371px;
-    margin-top: -200px;
-    scale: 30%;
+    margin-top: -50px;
+    width: 425px;
     display: grid;
     justify-content: center;
-    align-items: center;
+    overflow: hidden;
   }
 `;
 
@@ -35,7 +36,7 @@ export const DivFlex = styled.div`
   }
 `;
 
-export const Logo = styled.div`
+export const Logo = styled.img`
   margin-left: 112px;
 
   @media (max-width: 425px) {

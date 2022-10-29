@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Background = styled.div`
   background: var(--space-dark);
+  width: 100%;
 `;
 
 export const HeaderStyle = styled.div`
@@ -18,7 +19,7 @@ export const HeaderStyle = styled.div`
   }
 `;
 
-export const Logo = styled.div`
+export const Logo = styled.img`
   margin-left: 112px;
   padding-top: 51px;
 

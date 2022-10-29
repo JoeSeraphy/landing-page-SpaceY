@@ -15,7 +15,7 @@ export const BgImg = styled.div`
 `;
 
 export const MarsFlex = styled.div`
-  max-width: 1440px;
+  max-width: 1438px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -30,13 +30,13 @@ export const MarsFlex = styled.div`
   }
 `;
 
-export const Mars = styled.div`
+export const Mars = styled.img`
   margin-top: 46px;
   margin-left: 41px;
 
   @media (max-width: 425px) {
-    scale: 70%;
-    margin: 0 auto;
+    margin: 50px auto;
+    width: 425px;
   }
 `;
 
@@ -49,6 +49,7 @@ export const Text = styled.div`
   @media (max-width: 425px) {
     margin: 0 auto;
     width: 341px;
+    height: 100%;
     display: grid;
     justify-content: center;
     align-items: center;
@@ -86,7 +87,7 @@ export const TextP = styled.p`
 `;
 
 export const DivFlex = styled.div`
-  max-width: 1440px;
+  max-width: 1438px;
   margin-top: 121px;
   margin-left: 112px;
   padding-bottom: 100px;
@@ -104,7 +105,7 @@ export const DivFlex = styled.div`
 `;
 
 export const Text2 = styled.div`
-  width: 30%;
+  width: 340px;
 
   @media (max-width: 425px) {
     width: 100%;
@@ -114,7 +115,7 @@ export const Text2 = styled.div`
   }
 `;
 
-export const Logo = styled.div`
+export const Logo = styled.img`
   width: 162px;
 
   @media (max-width: 425px) {

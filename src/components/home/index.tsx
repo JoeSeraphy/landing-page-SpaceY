@@ -13,8 +13,6 @@ import {
 } from "./styles";
 
 export const Home = () => {
-  const illustration = <img src="./illustra/astronauta.png" />;
-
   return (
     <div>
       <GlobalStyles />
@@ -36,7 +34,7 @@ export const Home = () => {
               width="264px"
             />
           </TextsBanner>
-          <Img>{illustration}</Img>
+          <Img src="./illustra/astronauta.svg" />
         </HomeStyle>
         <FlexIcons>
           <Icons

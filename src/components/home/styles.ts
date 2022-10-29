@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { device } from "../../styles/responsive";
 
 export const Background = styled.div`
   background: var(--space-dark);
@@ -13,8 +12,6 @@ export const HomeStyle = styled.div`
   justify-content: center;
 
   @media (max-width: 425px) {
-    max-width: 375px;
-    margin-top: -50px;
     display: grid;
     justify-content: center;
     align-items: center;
@@ -26,9 +23,11 @@ export const TextsBanner = styled.div`
   height: 359px;
   margin-top: 95px;
   margin-left: 112px;
+  margin-right: 40px;
 
   @media (max-width: 425px) {
     width: 341px;
+    margin: 50px auto;
     display: grid;
     justify-content: center;
     align-items: center;
@@ -45,7 +44,7 @@ export const TextH4 = styled.h4`
   color: var(--sun);
   margin-bottom: 8px;
 
-  @media (max-width: 425px) {
+  @media (max-width: 425.9px) {
     font-size: 1.4rem;
     line-height: 20.56px;
     text-align: center;
@@ -82,14 +81,13 @@ export const TextP = styled.p`
   }
 `;
 
-export const Img = styled.div`
+export const Img = styled.img`
   position: relative;
   top: -50px;
 
   @media (max-width: 425px) {
-    top: 0;
-
-    scale: 70%;
+    margin: 50px auto;
+    width: 425px;
   }
 `;
 
@@ -100,6 +98,7 @@ export const FlexIcons = styled.div`
   justify-content: space-between;
 
   @media (max-width: 425px) {
+    width: 371px;
     display: grid;
     justify-content: center;
     text-align: center;

@@ -16,16 +16,13 @@ import {
 } from "./styles";
 
 export const Section = () => {
-  const mars = <img src="./illustra/Mars.svg" />;
-  const logo = <img src="./Logo.svg" />;
-
   return (
     <>
       <GlobalStyles />
       <Background>
         <BgImg>
           <MarsFlex>
-            <Mars>{mars}</Mars>
+            <Mars src="./illustra/Mars.svg" />
             <Text>
               <TextH4>Por que marte?</TextH4>
               <TextH2>Sobre o Planeta vermelho</TextH2>
@@ -46,11 +43,15 @@ export const Section = () => {
           </MarsFlex>
           <DivFlex>
             <Text2>
-              <Logo>{logo}</Logo>
+              <Logo src="./Logo.svg" />
               <TextH2>
                 O caminho para tornar a humanidade multiplanetária.
               </TextH2>
-              <Button text="increva-se agora" color={"var(--mars-ligth)"} />
+              <Button
+                text="increva-se agora"
+                color={"var(--mars-ligth)"}
+                bgColor="none"
+              />
             </Text2>
             <Gallery />
           </DivFlex>

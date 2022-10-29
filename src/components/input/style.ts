@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { props } from ".";
 
 export const Form = styled.div`
   margin-top: 150px;
@@ -9,12 +10,11 @@ export const Form = styled.div`
   border-radius: 20px;
 
   @media (max-width: 425px) {
-    margin: 0 auto;
-    width: 400px;
+    margin: 150px auto;
+    max-width: 371px;
     display: grid;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
   }
 `;
 
@@ -51,15 +51,19 @@ export const Label = styled.label`
   color: #fff;
 `;
 
-export const Input = styled.input`
+export const Input = styled.input<props>`
   background: none;
   width: 100%;
-  border: 1px solid var(--gray-05);
+  border: ${(props) => props.border};
   border-radius: 6px;
   padding: 16px;
   margin-bottom: 24px;
   color: #fff;
   outline: none;
+
+  &:focus {
+    border: 1px solid var(--mars-ligth);
+  }
 `;
 
 export const FlexCheckbox = styled.div`

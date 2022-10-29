@@ -1,11 +1,12 @@
 import styled from "styled-components";
 import { ButtonProps } from ".";
 
-export const ButtonStyle = styled.div<ButtonProps>`
-  background-color: ${(props) => props.bgColor};
+export const ButtonStyle = styled.button<ButtonProps>`
+  background: ${(props) => props.bgColor};
   width: ${(props) => props.width};
   heigth: 52px;
   cursor: pointer;
+  border: none;
   color: ${(props) => props.color};
   margin-top: 32px;
   padding: ${(props) => props.padding};

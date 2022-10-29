@@ -6,16 +6,14 @@ import instagram from "../../../public/icon/instagram.svg";
 import linkedin from "../../../public/icon/linkedin.svg";
 
 export const Footer = () => {
-  const smoke = <img src="./illustra/Smoke_footer.png" />;
-  const logo = <img src="./Logo.svg" />;
   const icons = [instagram, linkedin, facebook];
   return (
     <>
       <GlobalStyles />
       <Background>
-        <Smoke>{smoke}</Smoke>
+        <Smoke src="./illustra/Smoke_footer.svg" />
         <DivFlex>
-          <Logo>{logo}</Logo>
+          <Logo src="./Logo.svg" />
           <Icons>
             {icons.map((icon) => (
               <div key={icon}>

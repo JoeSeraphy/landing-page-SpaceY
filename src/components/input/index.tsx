@@ -1,10 +1,22 @@
 import { GlobalStyles } from "../../styles/globalStyles";
 import { Button } from "../button";
 import {
-  Checkbox, DivImputs, FlexCheckbox, Form, Icon, Input, Label, SubTitle, Title
+  Checkbox,
+  DivImputs,
+  FlexCheckbox,
+  Form,
+  Icon,
+  Input,
+  Label,
+  SubTitle,
+  Title,
 } from "./style";
 
-export const FormInput = () => {
+export interface props {
+  border: string;
+}
+
+export const FormInput = (border: props) => {
   const ticket = <img src="./icon/Icon_ticket.svg" />;
 
   return (
@@ -23,19 +35,19 @@ export const FormInput = () => {
                 <Label>Seu nome</Label>
                 <br />
                 <br />
-                <Input type="text" />
+                <Input type="text" border=" 1px solid var(--gray-05)" />
               </div>
               <div>
                 <Label>E-mail</Label>
                 <br />
                 <br />
-                <Input type="text" />
+                <Input type="text" border=" 1px solid var(--gray-05)" />
               </div>
               <div>
                 <Label>Telefone</Label>
                 <br />
                 <br />
-                <Input type="text" />
+                <Input type="text" border=" 1px solid var(--gray-05)" />
               </div>
               <FlexCheckbox>
                 <Checkbox type="checkbox" />
@@ -47,6 +59,7 @@ export const FormInput = () => {
                 bgColor="var(--mars)"
                 padding="16px"
                 textAlign="center"
+                width="100%"
               />
             </form>
           </div>

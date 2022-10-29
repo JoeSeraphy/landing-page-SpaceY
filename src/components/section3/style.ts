@@ -20,22 +20,21 @@ export const DivFlex = styled.div`
   gap: 0 124px;
 
   @media (max-width: 425px) {
-    max-width: 375px;
+    width: 425px;
     display: grid;
     justify-content: center;
     align-items: center;
   }
 `;
 
-export const Rocket = styled.div`
+export const Rocket = styled.img`
   margin-top: 150px;
 
   @media (max-width: 425px) {
-    scale: 70%;
+    overflow: hidden;
     margin: 0 auto;
+    width: 425px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin-top: 50px;
   }
 `;

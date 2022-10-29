@@ -32,10 +32,9 @@ html {
  }
 
 body {
-
-    font-family: 'Heebo', sans-serif; 
     margin: 0 auto;
-  
+    display: grid;
+    font-family: 'Heebo', sans-serif; 
 }
 
 ul {

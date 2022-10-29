@@ -4,8 +4,6 @@ import { FormInput } from "../input";
 import { Background, BgImg, DivFlex, Rocket } from "./style";
 
 export const FormSection = () => {
-  const rocket = <img src="./illustra/Rocket_illustra.png" />;
-
   return (
     <>
       <GlobalStyles />
@@ -13,7 +11,7 @@ export const FormSection = () => {
         <BgImg>
           <DivFlex>
             <FormInput />
-            <Rocket>{rocket}</Rocket>
+            <Rocket src="./illustra/rocket.svg" />
           </DivFlex>
         </BgImg>
       </Background>
