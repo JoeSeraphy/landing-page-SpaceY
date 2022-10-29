@@ -47,7 +47,7 @@ npm run dev
 
 Você pode visualiza os projetos pelos links abaixo:
 
-- [Live Preview]()
+- [Live Preview](https://page-spacey.vercel.app/)
 
 - [Figma](<https://www.figma.com/file/W109B1CGYN1ILSeujVy4Pe/SpaceY---Figmentor-(Community)?node-id=45%3A649>)
 
